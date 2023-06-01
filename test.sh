@@ -19,7 +19,6 @@ IMAGE=derekvasilich/docker-node
 #     --no-sandbox)
 
 docker container run --rm --entrypoint '' ${IMAGE_NAME:-$IMAGE} dpkg --print-architecture
-
 docker container run --rm --entrypoint '' ${IMAGE_NAME:-$IMAGE} cat /etc/debian_version
 docker container run --rm --entrypoint '' ${IMAGE_NAME:-$IMAGE} google-chrome --version
 docker container run --rm --entrypoint '' ${IMAGE_NAME:-$IMAGE} node --version
